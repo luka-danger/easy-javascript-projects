@@ -3,7 +3,7 @@
 //If a number can be divided by 3 with no remainder, print "Fizz"
 //If a number can be divided by 5 with no remainder, print "Buzz"
 //If a number can be divided by both 3 and 5 with no remainder, print "FizzBuzz"
-//Else print the entered number and then break the loop (do you need to add a break with a for loop?)
+//Else print the entered number 
 
 let fizz_buzz = parseInt(prompt("Please enter a number to FizzBuzz up to: \n"))
 
