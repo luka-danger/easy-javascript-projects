@@ -37,16 +37,9 @@ let runVest = {
 runVest.color = "gray"
 console.log(runVest.color)
 
-/* Make array contents objects (NOT WORKING)
-let backpack = ["Notebook", "Pen", "Protein Bar", "Laptop", "Headphones"]
-convertArrayToObject(
-    [
-    backpack[0] = schoolSupplies;
-    backpack[1] = schoolSupplies;
-    backpack[2] = snacks;
-    backpack[3] = technology;
-    backpack[4] = technology;
-    ]
-); 
-
-console.log(backpack.technology)*/ 
+for (i = 1; i <= fruitList.length; i++) {
+    newFruitList = [];
+    fruit = fruitList[i - 1];
+    newFruitList.push(fruit);
+    console.log(`The fruitList array contains ${i} fruits: ` + newFruitList)
+}
