@@ -21,3 +21,7 @@ Array.prototype.insert = function (index, items) {
 fruits.insert(2, "and")
 let fruitString = fruits.toString();
 console.log(`My favorite fruits are ${fruitString}`)
+
+// Create Object
+let waffles = { name: "Waffles", species: "Dog", age: 4, isCute: true }
+console.log(waffles.isCute)
