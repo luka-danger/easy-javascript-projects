@@ -22,6 +22,16 @@ fruits.insert(2, "and")
 let fruitString = fruits.toString();
 console.log(`My favorite fruits are ${fruitString}`)
 
-// Create Object
+// Object 1
 let waffles = { name: "Waffles", species: "Dog", age: 4, isCute: true }
 console.log(waffles.isCute)
+
+// Object 2
+let runVest = {
+    color: "Blue",
+    brand: "Ultimate Direction",
+    numOfPockets: 5,
+    hasWaterBottle: true,
+};
+
+console.log(runVest.color)
