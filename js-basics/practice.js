@@ -37,8 +37,8 @@ let runVest = {
 runVest.color = "gray"
 console.log(runVest.color)
 
+newFruitList = [];
 for (i = 1; i <= fruitList.length; i++) {
-    newFruitList = [];
     fruit = fruitList[i - 1];
     newFruitList.push(fruit);
     console.log(`The fruitList array contains ${i} fruits: ` + newFruitList)
