@@ -1,5 +1,8 @@
 // Array 1
 const fruits = ["apples", "bananas", "oranges"];
+fruits.unshift("watermelon");
+fruits.pop()
+console.log(fruits.join(" are fruits "));
 
 // Array Option 2
 const fruitList = [
@@ -37,6 +40,7 @@ let runVest = {
 runVest.color = "gray"
 console.log(runVest.color)
 
+// For Loop Practice
 newFruitList = [];
 for (i = 1; i <= fruitList.length; i++) {
     fruit = fruitList[i - 1];
