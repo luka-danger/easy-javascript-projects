@@ -9,4 +9,6 @@ const fruitList = [
 ]
 
 let fruit = fruits[1]
-console.log(fruit)
+fruitList[0] = "mango"
+fruitList[3] = "grapes"
+console.log(fruitList)
