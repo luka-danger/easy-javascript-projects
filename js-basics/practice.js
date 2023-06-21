@@ -17,6 +17,7 @@ fruitList[3] = "grapes"
 
 bigList = fruits.concat(fruitList);
 console.log(bigList)
+console.log(bigList.sort())
 
 // Implement method to insert items to a specific index of array
 Array.prototype.insert = function (index, items) {
@@ -29,6 +30,7 @@ console.log(`My favorite fruits are ${bigList}`)
 // 1 is index, 0 is how many elements are removed
 fruits.splice(1, 0, "tomato", "green beans")
 console.log(`Grocery List: ${fruits}`)
+console.log(bigList.slice(1, 3))
 
 // Object 1
 let waffles = { name: "Waffles", species: "Dog", age: 4, isCute: true }
