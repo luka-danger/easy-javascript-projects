@@ -51,8 +51,6 @@ console.log(runVest.color)
 
 // For Loop Practice
 newFruitList = [];
-
-// for (initializer, condition, final expression)
 for (i = 1; i <= fruitList.length; i++) {
     fruit = fruitList[i - 1];
     newFruitList.push(fruit);
@@ -89,3 +87,8 @@ function catsWithC(cat) {
 
 // Search bigCat array for cats that start w/ "c"
 console.log(bigCat.filter(catsWithC));
+
+// for (initializer, condition, final expression)
+for (let i = 1; i < 10; i++) {
+    console.log(`${i} x ${i} = ${i * i}`);
+}
