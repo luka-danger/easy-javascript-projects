@@ -51,6 +51,8 @@ console.log(runVest.color)
 
 // For Loop Practice
 newFruitList = [];
+
+// for (initializer, condition, final expression)
 for (i = 1; i <= fruitList.length; i++) {
     fruit = fruitList[i - 1];
     newFruitList.push(fruit);
