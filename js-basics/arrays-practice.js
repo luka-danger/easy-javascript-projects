@@ -23,9 +23,10 @@ console.log(bigList.sort())
 Array.prototype.insert = function (index, items) {
     this.splice(index, 0, items);
 };
-// Add and between bananas and oranges
+// Add and between last two fruits
 bigList.insert(7, " and ")
 console.log(`My favorite fruits are ${bigList}`)
+// Remove and between last two fruits
 bigList.splice(7, 1)
 
 // 1 is index, 0 is how many elements are removed
@@ -56,6 +57,23 @@ for (i = 1; i <= fruitList.length; i++) {
     console.log(`The fruitList array contains ${i} fruits: ` + newFruitList)
 }
 
+// For...of loop displays each fruit individually
 for (fruit of bigList) {
     console.log(fruit);
 }
+
+// Return string as all upper case 
+function upperCase(string) {
+    return string.toUpperCase()
+}
+
+whyAreYouYelling = bigList.map(upperCase)
+console.log(whyAreYouYelling.toString())
+
+// Return string as all lower case 
+function whisper(string) {
+    return string.toLowerCase()
+}
+
+let greeting = "HELLO"
+console.log(whisper(greeting)) 
