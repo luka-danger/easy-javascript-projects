@@ -92,3 +92,17 @@ console.log(bigCat.filter(catsWithC));
 for (let i = 1; i < 10; i++) {
     console.log(`${i} x ${i} = ${i * i}`);
 }
+
+let backpack = ["MacBook", "notepad", "pen", "protein bar"]
+let backpackContents = "My backpack contains a ";
+// Add items in backpack to backpackContents string
+for (i = 0; i < backpack.length; i++) {
+    // Use for last item in backpack 
+    if (i === backpack.length - 1) {
+        backpackContents += `and ${backpack[i]}.`
+    }
+    else {
+        backpackContents += `${backpack[i]}, `
+    }
+}
+console.log(backpackContents)
