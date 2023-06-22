@@ -76,4 +76,14 @@ function whisper(string) {
 }
 
 let greeting = "HELLO"
-console.log(whisper(greeting)) 
+console.log(whisper(greeting))
+
+const bigCat = ["Cougar", "Lion", "Tiger", "Cheetah", "Leopard"]
+
+// Return cats that start with letter C
+function catsWithC(cat) {
+    return cat.startsWith("C");
+}
+
+// Search bigCat array for cats that start w/ "c"
+console.log(bigCat.filter(catsWithC));
