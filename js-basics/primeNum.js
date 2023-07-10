@@ -1,7 +1,7 @@
-var primeNumberArray = []
+let primeNumberArray = []
 
-for (var i = 3; i < array.length; i++) {
-    var pass = true
+for (let i = 3; i < primeNumberArray.length; i++) {
+    let pass = true
     if (primeNumberArray[i] % 2 == 0) {
         pass = false
     }
@@ -9,16 +9,16 @@ for (var i = 3; i < array.length; i++) {
         pass = false
     }
 
-    var multipleOfTwo = primeNumberArray[i] * 2
-    var multipleOfThree = primeNumberArray[i] * 3
+    let multipleOfTwo = primeNumberArray[i] * 2
+    let multipleOfThree = primeNumberArray[i] * 3
 
     if (multipleOfTwo < 100) {
-        var multipleOfTwoIdx = array.find(multipleOfTwo)
+        let multipleOfTwoIdx = array.find(multipleOfTwo)
         array.remove(multipleOfTowIdx)
     }
 
     if (multipleOfThree < 100) {
-        var multipleOfThreeIdx = array.find(multipleOfTwo)
+        let multipleOfThreeIdx = array.find(multipleOfTwo)
         array.remove(multipleOfThreeIdx)
     }
 
