@@ -14,7 +14,7 @@ const celciusToKelvin = function(temp) {
 };
 
 const kelvinToCelcius = function(temp) {
-    let kelToCel = ;
+    let kelToCel = (temp - 273.15);
     return kelToCel; 
 };
 
