@@ -9,7 +9,7 @@ const convertToFahrenheit = function(temp) {
 }; 
 
 const celciusToKelvin = function(temp) {
-    let celToKel = ; 
+    let celToKel = (temp + 273.15); 
     return celToKel; 
 };
 
