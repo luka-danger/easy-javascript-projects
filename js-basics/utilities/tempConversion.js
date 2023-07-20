@@ -24,6 +24,6 @@ const fahrenheitToKelvin = function(temp) {
 };
 
 const kelvinToFahrenheit = function(temp) {
-    let kelToFahr = ;
+    let kelToFahr = (temp * (9/5) - 459.67);
     return kelToFahr; 
 }; 
