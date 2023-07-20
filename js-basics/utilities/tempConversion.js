@@ -20,7 +20,7 @@ const kelvinToCelcius = function(temp) {
 
 const fahrenheitToKelvin = function(temp) {
     let fahrToKel = (temp + 459.67) * (5/9);
-    return fahrToKel = ;
+    return fahrToKel;
 };
 
 const kelvinToFahrenheit = function(temp) {
