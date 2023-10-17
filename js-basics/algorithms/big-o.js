@@ -43,7 +43,7 @@ Big O: O(n * a)
 //Algorithm 4
 for (let j = 0; j < data.length; j++) {
     for (let i = 0; i < data.length; i++) 
-        console.log(data[i] + data[j];);
+        console.log(data[i] + data[j]);
 }; 
 
 /* Time Complexity for Algorithm 4:
@@ -54,4 +54,21 @@ Big O: O(n^2) - Quadratic Complexity
 This grows quickly - Poor performance at scale! 
 For input of 3, have to log 9 times.
 For 100 inputs, have to log 10,000 times...
+*/ 
+
+//Algorithm 5
+for (let j = 0; j < data.length; j++) {
+    for (let i = 0; i < data.length; i++) 
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+
+}; 
+
+/* Time Complexity for Algorithm 5:
+O(4n^2) --> remove constants, 4 is just based on input
+n^2 tells us how algorithm grows over time 
+
+Big O: O(n^2) - Quadratic Complexity  
 */ 
