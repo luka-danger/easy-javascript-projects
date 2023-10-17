@@ -94,7 +94,7 @@ for (let i = 0; i < data.length; i++) {
 /* Time Complexity for Algorithm 6:
 O(n^2 + n) --> Simplify and drop all constants that scale slower
 n^2 grows quicker than n, so can simplify 
-Big O: O(n)
+Big O: O(n^2)
 */ 
 
 // Algorithm 7
