@@ -21,3 +21,8 @@ for (let j = 0; j < data2.length; j++) {
 for (let i = 0; i < data.length; i++) {
     console.log(data[i]);
 }; 
+
+/* Time Complexity for Algorithm 2:
+Algorithm scales based on length of 2 separate arrays
+O(n + a)
+*/ 
