@@ -14,6 +14,14 @@ As n grows, algorithm scales 1:1 with size of n
 Big O: O(n) - Linear Complexity 
 */
 
+/* Space Complexity for Algorithm 1: 
+Space complexity is zero, not adding extra space
+because not creating any elements; 
+Space does not change as input scales 
+
+Big O: O(1)
+*/
+
 //Algorithm 2
 for (let j = 0; j < data2.length; j++) {
     console.log(data2[j]);
