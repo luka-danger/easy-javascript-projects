@@ -96,3 +96,15 @@ O(n^2 + n) --> Simplify and drop all constants that scale slower
 n^2 grows quicker than n, so can simplify 
 Big O: O(n)
 */ 
+
+// Algorithm 7
+for (let i=0; i < data.length; i++) {
+    // Add elements from data to out 
+    out[i] = data[1]; 
+}; 
+
+/* Space Complexity for Algorithm 7: 
+Space scales at same size as number of elements 
+
+Big O: O(n) - Linear 
+*/
