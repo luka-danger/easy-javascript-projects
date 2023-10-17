@@ -39,3 +39,19 @@ of data2 it also loops through data
 n times for every single a time in loop
 Big O: O(n * a)
 */ 
+
+//Algorithm 4
+for (let j = 0; j < data.length; j++) {
+    for (let i = 0; i < data.length; i++) 
+        console.log(data[i] + data[j];);
+}; 
+
+/* Time Complexity for Algorithm 4:
+Every time n is looped through, loop through for 
+each element of n (nxn or n^2)
+Big O: O(n^2) - Quadratic Complexity  
+
+This grows quickly - Poor performance at scale! 
+For input of 3, have to log 9 times.
+For 100 inputs, have to log 10,000 times...
+*/ 
