@@ -108,3 +108,17 @@ Space scales at same size as number of elements
 
 Big O: O(n) - Linear 
 */
+
+// Algorithm 8
+for (let i=0; i < data.length; i++) {
+    out[i] = []; 
+    for (let j = 0; j < data.length; j++) 
+        out[i][j] = data[i]; 
+}; 
+
+/* Space Complexity for Algorithm 8: 
+Output 3 new arrays, so will output each item in array
+3 times (A, B, C); 3 arrays x 3 elements = 3 x 3 or 3^2
+
+Big O: O(n^2) - Quadratic
+*/
