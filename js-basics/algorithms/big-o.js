@@ -72,3 +72,19 @@ n^2 tells us how algorithm grows over time
 
 Big O: O(n^2) - Quadratic Complexity  
 */ 
+
+//Algorithm 6
+for (let j = 0; j < data.length; j++) {
+    for (let i = 0; i < data.length; i++) 
+        console.log(data[i] + data[j]);
+}; 
+
+for (let i = 0; i < data.length; i++) {
+        console.log(data[i]);
+}; 
+
+/* Time Complexity for Algorithm 6:
+O(n^2 + n) --> Simplify and drop all constants that scale slower
+n^2 grows quicker than n, so can simplify 
+Big O: O(n)
+*/ 
