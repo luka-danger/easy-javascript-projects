@@ -17,3 +17,16 @@ const path = require('node:path');
 
 let pathObject = path.parse(__filename);
 console.log(pathObject)
+
+// Event Emitter Module
+// Class 
+const EventEmitter = require('node:events');
+// Object 
+const emitter = new EventEmitter(); 
+// Register a listener 
+emitter.on('messageLogged', function(){
+    console.log('Listener called')
+});
+// Raise an event 
+emitter.emit('messageLogged')
+
