@@ -1,32 +1,13 @@
-const os = require('node:os');
+// Load HTTP Module
+const http = require('http');
 
-let totalMemory = os.totalmem()
-let freeMemory = os.freemem()
+// Create Web Server
+const server = http.createServer();
+// Raise event every time new request with port 3000
+server.on('connection', (socket) => {
+    console.log('New connection...;');
+}); 
+// Server Port
+server.listen(3000)
 
-console.log(`Total Memory: ${totalMemory}`)
-console.log(`Free Memory: ${freeMemory}`)
-
-// main module 
-// Use require to load the function 
-// Store value in constant so we don't accidentally override
-const logger = require('./logger');
-
-logger()
-// Show file path
-const path = require('node:path');
-
-let pathObject = path.parse(__filename);
-console.log(pathObject)
-
-// Event Emitter Module
-// Class 
-const EventEmitter = require('node:events');
-// Object 
-const emitter = new EventEmitter(); 
-// Register a listener 
-emitter.on('messageLogged', function(){
-    console.log('Listener called')
-});
-// Raise an event 
-emitter.emit('messageLogged')
-
+console.group('Listening on port 3000...')
