@@ -1,5 +1,11 @@
 // main module 
+// Use require to load the function 
+// Store value in constant so we don't accidentally override
+const logger = require('./logger');
 
-let logger = require('./logger');
+logger()
 
-logger.log()
+const path = require('node:path');
+
+let pathObject = path.parse(__filename);
+console.log(pathObject)
