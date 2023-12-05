@@ -1,3 +1,5 @@
 // main module 
 
-console.log(module)
+let logger = require('./logger');
+
+logger.log()
