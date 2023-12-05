@@ -1,11 +1,7 @@
-// main module 
-// Use require to load the function 
-// Store value in constant so we don't accidentally override
-const logger = require('./logger');
+const os = require('node:os');
 
-logger()
+let totalMemory = os.totalmem()
+let freeMemory = os.freemem()
 
-const path = require('node:path');
-
-let pathObject = path.parse(__filename);
-console.log(pathObject)
+console.log(`Total Memory: ${totalMemory}`)
+console.log(`Free Memory: ${freeMemory}`)
