@@ -2,7 +2,7 @@ let EventEmitter = require('events');
 let emitter = new EventEmitter();
 
 // Register a listner 
-emitter.on('messageLogged', function(arg) {
+emitter.on('messageLogged', (arg) => {
     console.log('Listener called', arg);
 });
 
