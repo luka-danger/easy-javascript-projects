@@ -9,3 +9,11 @@ emitter.on('messageLogged', (arg) => {
 // Raise an event
 // Add event arguement 
 emitter.emit('messageLogged', {id: 1, url: 'http://'}); 
+
+// Exercise: Raise an event called logging  (data: message)
+let logging = new EventEmitter(); 
+logging.on('logging', (arg) => {
+    console.log('Logging...', arg)
+});
+
+logging.emit('logging', {data: 'wow, you did it'})
