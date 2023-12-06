@@ -1,4 +1,9 @@
-// Load HTTP Module
+// main module
+let logger = require('./logger'); 
+
+logger()
+
+// HTTP Module
 const http = require('http');
 
 // Create Web Server
