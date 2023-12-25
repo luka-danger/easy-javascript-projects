@@ -1,7 +1,7 @@
 const palindrome = function (word) {
     let reverseWord = []
     for (letter in word) {
-        reverseWord.add(letter)
+        reverseWord.push(letter)
     }
     if (reverseWord === word) {
         return true;
