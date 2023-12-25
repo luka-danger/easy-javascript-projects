@@ -53,4 +53,10 @@ describe('multiply', () =>  {
         expect(calculator.multiply(6,2)).toBe(12);
     })
 }); 
+
+describe('power', () => {
+    test('raises one number to the power of another number', () => {
+        expect(calculator.power(2,3)).toBe(8);
+    });
+}); 
   
