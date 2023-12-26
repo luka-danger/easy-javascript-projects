@@ -1,11 +1,6 @@
-const palindrome = function (word) {
-    let reverseWord = []
-    for (letter in word) {
-        reverseWord.push(letter)
-    }
-    if (reverseWord === word) {
-        return true;
-    } else {
-        return false; 
-    }
+const palindromes = function (word) {
+    // .split() splits each character into array
+    // .reverse() reverses the direction of the array
+    // .join() puts characters into 'word' variable as single word 
+    return word == word.split('').reverse().join('');
 };
