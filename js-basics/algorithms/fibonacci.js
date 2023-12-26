@@ -1,3 +1,7 @@
-const fibonacci = function(num1, num2) {
-    let fibNum = num1 + num2; 
+const fibonacci = function(num) {
+    if (num < 2) {
+        return num; 
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2); 
+    }
 };
