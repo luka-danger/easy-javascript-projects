@@ -1,4 +1,4 @@
-let getTheTitle = function(array) {
+let getTheTitle = (array) => {
     return array.map((book) => book.title)
 }; 
 
